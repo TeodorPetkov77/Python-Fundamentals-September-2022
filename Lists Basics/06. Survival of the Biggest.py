@@ -1,38 +1,16 @@
-items_price = input()
-budget = float(input())
-item_list = items_price.split("|")
-item_list2 = []
-prices_list = []
-prices_list_before = []
+numbers = input()
+numbers_list = numbers.split(" ")
+n = int(input())
 
-for i in item_list:
-    item_list2.append(i.split("->"))
+for j in range(n):
+    smallest = 999999999999
+    for i in numbers_list:
+        if smallest > int(i):
+            smallest = int(i)
+    for i in range(len(numbers_list) + 1):
+        if smallest == int(numbers_list[i]):
+            numbers_list.remove(numbers_list[i])
+            break
 
-for i in item_list2:
-    if i[0] == "Clothes" and float(i[1]) > 50:
-        continue
-    elif i[0] == "Shoes" and float(i[1]) > 35:
-        continue
-    elif i[0] == "Accessories" and float(i[1]) > 20.5:
-        continue
-    if budget < float(i[1]):
-        continue
-    budget -= float(i[1])
-    prices_list_before.append(float(i[1]))
-    prices_list.append(float(i[1]) * 1.4)
-
-turnover = sum(prices_list)
-profit = turnover - sum(prices_list_before)
-total_money = turnover + budget
-
-for i in prices_list:
-    print(f"{i:.2f}", end=" ")
-
-print()
-print(f"Profit: {profit:.2f}")
-
-if total_money >= 150:
-    print("Hello, France!")
-else:
-    print("Not enough money.")
-
+numbers_str = ", ".join(numbers_list)
+print(numbers_str)

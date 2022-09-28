@@ -1,42 +1,41 @@
-energy = 100
-coins = 100
-event = input()
-event_list = event.split("|")
-event_list_final = []
-gained_energy = 0
-rush_over = False
+fire_level = input()
+water = int(input())
 
-for i in event_list:
-    event_list_final.append(i.split("-"))
+fire_level_list = fire_level.split("#")
+fire_level_list_2 = []
+fire_level_list_level = []
+fire_level_list_value = []
+valid_cells = []
 
-for i in event_list_final:
-    if i[0] == "rest":
-        if (int(i[1]) + energy) > 100:
-            gained_energy = 100 - energy
-            energy = 100
-        else:
-            energy += int(i[1])
-            gained_energy = int(i[1])
-        print(f"You gained {gained_energy} energy.")
-        print(f"Current energy: {energy}.")
-    elif i[0] == "order":
-        if energy < 30:
-            print("You had to rest!")
-            energy += 50
-        else:
-            coins += int(i[1])
-            energy -= 30
-            print(f"You earned {int(i[1])} coins.")
-    elif i[0] != "order" and i[0] != "rest":
-        if coins < int(i[1]):
-            print(f"Closed! Cannot afford {i[0]}.")
-            rush_over = True
-            break
-        else:
-            coins -= int(i[1])
-            print(f"You bought {i[0]}.")
+for i in fire_level_list:
+    fire_level_list_2.append(i.split(" = "))
 
-if rush_over is False:
-    print("Day completed!")
-    print(f"Coins: {coins}")
-    print(f"Energy: {energy}")
+for i in fire_level_list_2:
+    fire_level_list_level.append(i[0])
+    fire_level_list_value.append(int(i[1]))
+
+for i in range(len(fire_level_list)):
+    if fire_level_list_level[i] == "High" \
+            and 81 <= fire_level_list_value[i] <= 125:
+        if water < fire_level_list_value[i]:
+            continue
+        water -= fire_level_list_value[i]
+        valid_cells.append(fire_level_list_value[i])
+    elif fire_level_list_level[i] == "Medium" \
+            and 51 <= fire_level_list_value[i] <= 80:
+        if water < fire_level_list_value[i]:
+            continue
+        water -= fire_level_list_value[i]
+        valid_cells.append(fire_level_list_value[i])
+    elif fire_level_list_level[i] == "Low" \
+            and 1 <= fire_level_list_value[i] <= 50:
+        if water < fire_level_list_value[i]:
+            continue
+        water -= fire_level_list_value[i]
+        valid_cells.append(fire_level_list_value[i])
+
+print("Cells:")
+for i in valid_cells:
+    print(f"- {i}")
+print(f"Effort: {sum(valid_cells) * 0.25:.2f}")
+print(f"Total Fire: {sum(valid_cells)}")

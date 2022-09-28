@@ -1,30 +1,8 @@
-gift_str = input()
-gift_list = gift_str.split(" ")
+numbers_str = input()
+numbers_list = numbers_str.split(" ")
+numbers_list_int = []
 
-command = input()
-while command != "No Money":
-    command_list = command.split(" ")
-    if command_list[0] == "OutOfStock":
-        for i in range(len(gift_list)):
-            if gift_list[i] == command_list[1]:
-                gift_list[i] = None
-    elif command_list[0] == "Required":
-        if 0 < int(command_list[2]) < len(gift_list):
-            gift_list[int(command_list[2])] = command_list[1]
-    elif command_list[0] == "JustInCase":
-        if gift_list[len(gift_list) - 1] is None:
-            for i in range(len(gift_list) - 1, - 1, -1):
-                if gift_list[i] is None:
-                    continue
-                else:
-                    gift_list[i] = command_list[1]
-                    break
-        else:
-            gift_list[len(gift_list) - 1] = command_list[1]
-    command = input()
+for i in numbers_list:
+    numbers_list_int.append(-int(i))
 
-for i in gift_list:
-    if i is None:
-        continue
-    else:
-        print(i, end=" ")
+print(numbers_list_int)
