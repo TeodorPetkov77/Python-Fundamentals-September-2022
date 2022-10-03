@@ -9,3 +9,4 @@ if version[2] == 10:
         version[0] += 1
 
 print(f"{version[0]}.{version[1]}.{version[2]}")
+
