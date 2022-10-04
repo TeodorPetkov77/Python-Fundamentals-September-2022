@@ -3,7 +3,21 @@ command = input().split()
 
 while command != ['3:1']:
     if command[0] == "merge":
-        data_list[int(command[1]):int(command[2]) + 1] = ["".join(data_list[int(command[1]):(int(command[2]) + 1)])]
+        start = int(command[1])
+        end = int(command[2])
+        list_lenght = len(data_list)
+        if start < 0:
+            start = 0
+        if end >= list_lenght:
+            end = list_lenght - 1
+        word_to_add = ""
+        for index in range(start, end + 1):
+            word_to_add += data_list[index]
+        data_list.insert(start, word_to_add)
+        for index in range(start, end + 1):
+            data_list.pop(start + 1)
+        if "" in data_list:
+            data_list.remove("")
     elif command[0] == "divide":
         item_to_remove = int(command[1])
         item_position = int(command[1])
