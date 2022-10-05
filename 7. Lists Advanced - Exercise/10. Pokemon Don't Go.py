@@ -12,7 +12,6 @@ while len(pokemons) > 0:
         removed_item = pokemons.pop(len(pokemons) - 1)
         pokemons.append(removed_item)
     else:
-        index_to_remove = index_to_remove
         removed_item = pokemons.pop(index_to_remove)
     pokemons = list(map(
         lambda x: x + removed_item if x <= removed_item
