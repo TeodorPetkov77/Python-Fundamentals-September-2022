@@ -24,3 +24,5 @@ targets = list(map(lambda x: x if x is not None else -1, targets))
 print(f"Shot targets: {shot_targets_total} ->", end=" ")
 for i in targets:
     print(i, end=" ")
+
+# https://judge.softuni.org/Contests/Practice/Index/2305#1

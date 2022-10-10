@@ -31,3 +31,5 @@ while command != "End":
     command = input()
 
 print("|".join(list(map(str, targets))))
+
+# https://judge.softuni.org/Contests/Practice/Index/2305#2
