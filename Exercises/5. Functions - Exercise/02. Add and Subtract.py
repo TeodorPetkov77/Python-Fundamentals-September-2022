@@ -1,11 +1,13 @@
-def add_and_subtract(a, b, c):
-    def sum_numbers():
-        return a + b
+def sum_numbers(a, b):
+    return a + b
 
-    def subtract():
-        print(sum_numbers() - c)
-    sum_numbers()
-    subtract()
+
+def subtract(a, b):
+    return a - b
+
+
+def add_and_subtract(a, b, c):
+    print(subtract(sum_numbers(a, b), c))
 
 
 num1 = int(input())
