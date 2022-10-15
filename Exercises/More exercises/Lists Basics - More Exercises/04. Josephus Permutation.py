@@ -1,17 +1,16 @@
 people = list(map(int, input().split(" ")))
-k = int(input())
-executed = []
-position = 0
 index = 0
+position = 1
+executed_list = []
+k = int(input())
 while people:
-    position += 1
-    if position % k == 0:
-        executed_person = people.pop(index)
-        executed.append(executed_person)
-        continue
-    index += 1
     if index > len(people) - 1:
         index = 0
+    if position % k == 0:
+        executed_list.append(people.pop(index))
+        position += 1
+        continue
+    position += 1
+    index += 1
 
-
-print(executed)
+print(f"[{','.join(list(map(str, executed_list)))}]")
