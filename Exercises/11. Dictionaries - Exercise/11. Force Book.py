@@ -39,7 +39,8 @@ while command != "Lumpawaroo":
         if force_user not in list_of_users:
             force_book[force_side].append(force_user)
             list_of_users.append(force_user)
-        if force_user in list_of_users:
+            print(f"{force_user} joins the {force_side} side!")
+        elif force_user in list_of_users:
             switch_side = get_position(force_book, force_user)
             force_book = swicharoo(force_book, force_side, switch_side, force_user)
             print(f"{force_user} joins the {force_side} side!")
