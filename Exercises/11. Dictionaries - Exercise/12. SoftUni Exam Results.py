@@ -34,9 +34,6 @@ for key in judge_exams.keys():
 
 print("Submissions:")
 for lan in dict.fromkeys(entry_list):
-    n = 0
-    for find in entry_list:
-        if find == lan:
-            n += 1
+    n = entry_list.count(lan)
     print(f"{lan} - {n}")
 
