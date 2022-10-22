@@ -5,7 +5,6 @@ maximum_health_capacity = int(input())
 command = input()
 stale = True
 
-
 while command != "Retire":
     command = command.split(" ")
     if command[0] == "Fire":
@@ -14,7 +13,7 @@ while command != "Retire":
         if index in range(len(warship_ship_status)):
             warship_ship_status[index] -= damage
             if warship_ship_status[index] <= 0:
-                print("You won! The enemy ship has sunken!")
+                print("You won! The enemy ship has sunken.")
                 stale = False
                 break
     elif command[0] == "Defend":
@@ -42,8 +41,6 @@ while command != "Retire":
         print(f"{count} sections need repair.")
     if stale is False:
         break
-    # print(pirate_ship_status)
-    # print(warship_ship_status)
     command = input()
 
 if stale:
