@@ -28,6 +28,8 @@ for index, item in enumerate(maze):
 starting_line_index = line_index
 starting_position_index = position_index
 
+# MAGIC STARTS HERE
+
 while all_routes_tested is False:
 
     line_index = starting_line_index
