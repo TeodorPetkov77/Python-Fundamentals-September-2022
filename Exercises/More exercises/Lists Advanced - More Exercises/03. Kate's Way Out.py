@@ -45,11 +45,9 @@ while all_routes_tested is False:
             maze[starting_line_index][starting_position_index - 1] != ' ' and \
             maze[starting_line_index][starting_position_index + 1] != ' ':
         all_routes_tested = True
-    maze[starting_line_index][starting_position_index] = "k"
 
     while True:
         if maze[line_index][position_index - 1] == ' ':
-            maze[line_index][position_index - 1] = 'k'
             maze[line_index][position_index] = "X"
             moves += 1
             position_index -= 1
@@ -60,7 +58,6 @@ while all_routes_tested is False:
             moves_list.append(moves)
             break
         elif maze[line_index][position_index + 1] == ' ':
-            maze[line_index][position_index + 1] = 'k'
             maze[line_index][position_index] = "X"
             moves += 1
             position_index += 1
@@ -71,7 +68,6 @@ while all_routes_tested is False:
             moves_list.append(moves)
             break
         elif maze[line_index - 1][position_index] == ' ':
-            maze[line_index - 1][position_index] = 'k'
             maze[line_index][position_index] = "X"
             moves += 1
             line_index -= 1
@@ -82,7 +78,6 @@ while all_routes_tested is False:
             moves_list.append(moves)
             break
         elif maze[line_index + 1][position_index] == ' ':
-            maze[line_index + 1][position_index] = 'k'
             maze[line_index][position_index] = "X"
             moves += 1
             line_index += 1
