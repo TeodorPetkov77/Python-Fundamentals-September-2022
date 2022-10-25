@@ -8,3 +8,5 @@ for name in usernames:
             break
     if 3 <= len(name) <= 16 and valid:
         print(name)
+
+# https://judge.softuni.org/Contests/Compete/Index/1740#0

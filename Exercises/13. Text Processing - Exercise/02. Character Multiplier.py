@@ -19,3 +19,5 @@ for letter in longest:
     total += ord(letter)
 
 print(total)
+
+# https://judge.softuni.org/Contests/Compete/Index/1740#1
