@@ -99,7 +99,7 @@ if moves_list:
 else:
     print("Kate cannot get out")
 
-# https: // judge.softuni.org / Contests / Practice / Index / 1732  # 2
+# https://judge.softuni.org/Contests/Practice/Index/1732#2
 
 # 3.	Kate's Way Out
 # Kate is stuck in a maze. You should help her to find her way out.

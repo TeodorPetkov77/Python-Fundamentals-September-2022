@@ -13,3 +13,4 @@ else:
                 highest = population.index(max(population))
     print(population)
 
+# https://judge.softuni.org/Contests/Practice/Index/1732#0

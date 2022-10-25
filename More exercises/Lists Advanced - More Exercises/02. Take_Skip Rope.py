@@ -12,3 +12,5 @@ for i in range(0, len(take_list)):
     non_numbers_list = non_numbers_list[skip_list[i]:len(non_numbers_list)]
 
 print(result_string)
+
+# https://judge.softuni.org/Contests/Practice/Index/1732#1
