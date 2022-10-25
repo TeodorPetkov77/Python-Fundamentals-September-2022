@@ -18,3 +18,5 @@ while command != "stop":
 
 for key, value in resources_dict.items():
     print(f"{key} -> {value}")
+
+# https://judge.softuni.org/Contests/Compete/Index/1737#1

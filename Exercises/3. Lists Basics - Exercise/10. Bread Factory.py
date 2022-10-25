@@ -40,3 +40,5 @@ if rush_over is False:
     print("Day completed!")
     print(f"Coins: {coins}")
     print(f"Energy: {energy}")
+
+# https://judge.softuni.org/Contests/Compete/Index/1725#9

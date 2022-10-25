@@ -11,3 +11,5 @@ for i in range(1, electrons + 1):
         shells.append(max_n)
 
 print(shells)
+
+# https://judge.softuni.org/Contests/Compete/Index/1731#5

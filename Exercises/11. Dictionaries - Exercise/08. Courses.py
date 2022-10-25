@@ -14,3 +14,5 @@ for key, value in courses.items():
     print(f"{key}: {len(courses[key])}")
     for student in value:
         print(f"-- {student}")
+
+# https://judge.softuni.org/Contests/Compete/Index/1737#7

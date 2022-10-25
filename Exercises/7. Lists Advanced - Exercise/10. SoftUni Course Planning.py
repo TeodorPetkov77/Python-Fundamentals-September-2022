@@ -47,3 +47,4 @@ while command != "course start":
 for index, item in enumerate(course_list):
     print(f"{index + 1}.{item}")
 
+# https://judge.softuni.org/Contests/Compete/Index/1731#10

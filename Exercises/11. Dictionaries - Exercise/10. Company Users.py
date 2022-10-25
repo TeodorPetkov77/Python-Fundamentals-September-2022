@@ -17,3 +17,5 @@ for key, value in employees.items():
     print(f"{key}")
     for em_id in value:
         print(f"-- {em_id}")
+
+# https://judge.softuni.org/Contests/Compete/Index/1737#9

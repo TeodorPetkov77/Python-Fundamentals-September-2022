@@ -16,3 +16,5 @@ for i in range(int(command)):
         print(f"Contact {name_to_search} does not exist.")
     else:
         print(f"{name_to_search} -> {phonebook[name_to_search]}")
+
+# https://judge.softuni.org/Contests/Compete/Index/1737#3

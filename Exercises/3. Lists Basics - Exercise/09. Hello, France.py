@@ -36,3 +36,4 @@ if total_money >= 150:
 else:
     print("Not enough money.")
 
+# https://judge.softuni.org/Contests/Compete/Index/1725#8

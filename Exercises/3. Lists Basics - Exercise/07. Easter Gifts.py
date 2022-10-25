@@ -28,3 +28,5 @@ for i in gift_list:
         continue
     else:
         print(i, end=" ")
+
+# https://judge.softuni.org/Contests/Compete/Index/1725#6

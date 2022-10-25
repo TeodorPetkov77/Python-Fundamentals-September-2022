@@ -7,3 +7,4 @@ for word in message:
     letters = "".join(letters)
     print(f"{chr(int(code))}{letters}", end=" ")
 
+# https://judge.softuni.org/Contests/Compete/Index/1731#7

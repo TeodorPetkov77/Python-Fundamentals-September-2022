@@ -39,3 +39,5 @@ for i in valid_cells:
     print(f"- {i}")
 print(f"Effort: {sum(valid_cells) * 0.25:.2f}")
 print(f"Total Fire: {sum(valid_cells)}")
+
+# https://judge.softuni.org/Contests/Compete/Index/1725#3

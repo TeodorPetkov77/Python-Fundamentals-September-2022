@@ -52,3 +52,5 @@ for key, value in force_book.items():
     print(f"Side: {key}, Members: {len(value)}")
     for name in value:
         print(f"! {name}")
+
+# https://judge.softuni.org/Contests/Compete/Index/1737#10

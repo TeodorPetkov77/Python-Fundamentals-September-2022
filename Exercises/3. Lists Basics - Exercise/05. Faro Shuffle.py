@@ -13,3 +13,4 @@ for j in range(n):
 
 print(cards)
 
+# https://judge.softuni.org/Contests/Compete/Index/1725#4

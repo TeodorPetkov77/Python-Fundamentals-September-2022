@@ -14,3 +14,5 @@ for j in range(n):
 
 numbers_str = ", ".join(numbers_list)
 print(numbers_str)
+
+# https://judge.softuni.org/Contests/Compete/Index/1725#5

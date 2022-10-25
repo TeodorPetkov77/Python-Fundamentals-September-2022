@@ -6,3 +6,5 @@ for i in range(1, num2 + 1):
     my_list.append(i * num1)
 
 print(my_list)
+
+# https://judge.softuni.org/Contests/Compete/Index/1725#1

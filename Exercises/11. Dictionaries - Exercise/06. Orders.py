@@ -14,3 +14,5 @@ while command != "buy":
 
 for key, value in products.items():
     print(f"{key} -> {value[0]['price'] * value[1]['quantity']:.2f}")
+
+# https://judge.softuni.org/Contests/Compete/Index/1737#5

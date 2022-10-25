@@ -42,3 +42,5 @@ while command != ['3:1']:
     command = input().split()
 
 print(" ".join(data_list))
+
+# https://judge.softuni.org/Contests/Compete/Index/1731#8

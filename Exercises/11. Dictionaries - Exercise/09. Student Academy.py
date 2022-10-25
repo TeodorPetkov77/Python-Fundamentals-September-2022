@@ -16,3 +16,5 @@ final_grades = {key: sum(value) / len(value) for key, value in final_grades.item
 
 for key, value in final_grades.items():
     print(f"{key} -> {value:.2f}")
+
+# https://judge.softuni.org/Contests/Compete/Index/1737#8

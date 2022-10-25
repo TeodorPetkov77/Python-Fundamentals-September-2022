@@ -10,3 +10,4 @@ if version[2] == 10:
 
 print(f"{version[0]}.{version[1]}.{version[2]}")
 
+# https://judge.softuni.org/Contests/Compete/Index/1731#1

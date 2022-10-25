@@ -21,3 +21,5 @@ for i in range(n):
 
 for key, value in parking.items():
     print(f"{key} => {value}")
+
+# https://judge.softuni.org/Contests/Compete/Index/1737#6

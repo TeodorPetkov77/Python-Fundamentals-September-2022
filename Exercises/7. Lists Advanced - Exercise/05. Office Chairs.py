@@ -14,3 +14,4 @@ for i in range(rooms):
 if total_chairs >= total_visitor:
     print(f"Game On, {total_chairs - total_visitor} free chairs left")
 
+# https://judge.softuni.org/Contests/Compete/Index/1731#4

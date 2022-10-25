@@ -40,4 +40,4 @@ print(f"motes: {materials['motes']}")
 for key, value in junk.items():
     print(f"{key}: {value}")
 
-
+# https://judge.softuni.org/Contests/Compete/Index/1737#4

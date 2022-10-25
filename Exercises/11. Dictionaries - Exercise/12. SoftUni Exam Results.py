@@ -37,3 +37,4 @@ for lan in dict.fromkeys(entry_list):
     n = entry_list.count(lan)
     print(f"{lan} - {n}")
 
+# https://judge.softuni.org/Contests/Compete/Index/1737#11

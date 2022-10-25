@@ -17,3 +17,5 @@ while len(pokemons) > 0:
                 ))
     total_points += removed_item
 print(total_points)
+
+# https://judge.softuni.org/Contests/Compete/Index/1731#9

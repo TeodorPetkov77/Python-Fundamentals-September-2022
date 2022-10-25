@@ -21,3 +21,5 @@ for i in money_list_int:
     x += 1
 
 print(beggars_list_int)
+
+# https://judge.softuni.org/Contests/Compete/Index/1725#2
