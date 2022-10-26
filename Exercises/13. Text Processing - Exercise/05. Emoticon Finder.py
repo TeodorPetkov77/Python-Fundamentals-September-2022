@@ -5,3 +5,4 @@ for index in range(len(sentence)):
         temp_emot = sentence[index] + sentence[index + 1]
         print(temp_emot)
 
+# https://judge.softuni.org/Contests/Compete/Index/1740#4
