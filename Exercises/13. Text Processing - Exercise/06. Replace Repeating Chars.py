@@ -8,6 +8,9 @@ for index in range(1, len(sequence)):
 
 print(no_same)
 
+
+
+
 # https://judge.softuni.org/Contests/Compete/Index/1740#5
 
 # 6.	 Replace Repeating Chars

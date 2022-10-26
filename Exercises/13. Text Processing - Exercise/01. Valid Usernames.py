@@ -9,6 +9,9 @@ for name in usernames:
     if 3 <= len(name) <= 16 and valid:
         print(name)
 
+
+
+
 # https://judge.softuni.org/Contests/Compete/Index/1740#0
 
 # 1.	Valid Usernames

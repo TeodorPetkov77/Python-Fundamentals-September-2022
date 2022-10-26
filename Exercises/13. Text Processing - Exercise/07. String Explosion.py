@@ -10,6 +10,9 @@ for index in range(len(sequence)-1, -1, -1):
 
 print("".join(sequence)[::-1])
 
+
+
+
 # https://judge.softuni.org/Contests/Compete/Index/1740#5
 
 # String Explosion

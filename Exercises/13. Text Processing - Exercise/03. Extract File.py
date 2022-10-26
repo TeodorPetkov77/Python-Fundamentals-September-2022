@@ -6,6 +6,9 @@ file_ext = file_and_ext[1]
 print(f"File name: {file_name}")
 print(f"File extension: {file_ext}")
 
+
+
+
 # https://judge.softuni.org/Contests/Compete/Index/1740#2
 
 # Extract File

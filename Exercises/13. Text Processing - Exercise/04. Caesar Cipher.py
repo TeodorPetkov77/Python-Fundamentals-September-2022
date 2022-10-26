@@ -6,6 +6,9 @@ for letter in message:
 
 print(message_encrypted)
 
+
+
+
 # https://judge.softuni.org/Contests/Compete/Index/1740#3
 
 # 04. Caesar Cipher
