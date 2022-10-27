@@ -9,16 +9,16 @@ total = 0
 
 for item in sequence:
     front_letter = item[0]
-    after_letter = item[-1]
+    back_letter = item[-1]
     number = int(item[1:-1])
     if front_letter.isupper():
         result = number / alpha_position(front_letter)
     else:
         result = number * alpha_position(front_letter)
-    if after_letter.isupper():
-        result -= alpha_position(after_letter)
+    if back_letter.isupper():
+        result -= alpha_position(back_letter)
     else:
-        result += alpha_position(after_letter)
+        result += alpha_position(back_letter)
     total += result
 
 print(f"{total:.2f}")
