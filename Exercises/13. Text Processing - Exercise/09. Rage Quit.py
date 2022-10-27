@@ -1,4 +1,4 @@
-def split_list(symbols: str):
+def rage_quit(symbols: str):
     temp_string = ""
     non_num_list = []
     num_list = []
@@ -33,5 +33,5 @@ def split_list(symbols: str):
     print(result)
 
 
-split_list(input())
+rage_quit(input())
 
