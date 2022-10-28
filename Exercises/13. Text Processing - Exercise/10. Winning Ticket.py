@@ -25,7 +25,6 @@ tickets = [ticket.strip() for ticket in input().split(", ")]
 
 for ticket in tickets:
     uninterrupted_values = []
-
     winning = False
     if len(ticket) != 20:
         print("invalid ticket")
