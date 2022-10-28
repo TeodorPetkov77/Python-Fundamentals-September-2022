@@ -22,7 +22,6 @@ def best_streak(ticket):
 
 
 tickets = [ticket.strip() for ticket in input().split(", ")]
-index = 0
 
 for ticket in tickets:
     uninterrupted_values = []
