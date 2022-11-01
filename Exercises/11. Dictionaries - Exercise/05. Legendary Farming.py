@@ -27,7 +27,6 @@ while shadowmourne is False and valanyr is False and dragonwrath is False:
                     materials[item] -= 250
                     print(f"Dragonwrath obtained!")
                     break
-            continue
         else:
             if item not in junk:
                 junk[item] = 0
