@@ -1,12 +1,11 @@
 import re
 
-text_input = input()
-pattern = r'(^|(?<=\s))(([a-zA-Z0-9]+)([\.\-_]?)([A-Za-z0-9]+)(@)([a-zA-Z]+([\.\-][A-Za-z]+)+))(\b|(?=\s))'
-emails = re.finditer(pattern, text_input)
+text = input()
+pattern = r"(^|(?<=\s))([A-Za-z0-9]+[\.\-\_]?[A-Za-z0-9]+)+(@)([A-Za-z]+[\-]?[A-Za-z]+)+(\.[A-Za-z]+[\-]?[A-Za-z]+)+(\b|(?=\s))"
+emails = re.finditer(pattern, text)
 
 for i in emails:
     print(i.group())
-
 
 # https://judge.softuni.org/Contests/Compete/Index/1743#3
 
