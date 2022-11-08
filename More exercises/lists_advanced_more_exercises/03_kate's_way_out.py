@@ -1,9 +1,9 @@
 lines = int(input())
 maze = []
+moves_list = []
 line_index = 0
 position_index = 0
 moves = 0
-moves_list = []
 all_routes_tested = False
 
 # CREATE MAZE AND BORDERS 'E':
