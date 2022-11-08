@@ -12,5 +12,3 @@ print(f"Even: {', '.join(numbers_even)}")
 print(f"Odd: {', '.join(numbers_odd)}")
 
 # https://judge.softuni.org/Contests/Compete/Index/1731#3
-
-# sdada
