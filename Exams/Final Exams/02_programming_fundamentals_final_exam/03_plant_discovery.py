@@ -38,6 +38,7 @@ while command != "Exhibition":
             print("error")
     command = input()
 print("Plants for the exhibition:")
+
 for key, value in plant_rarity_dictionary.items():
     print(f"- {key}; Rarity: {value[0]['rarity']}; "
           f"Rating: {sum(value[1]['rating']) / len(value[1]['rating']):.2f}")
