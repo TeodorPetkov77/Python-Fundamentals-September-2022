@@ -15,5 +15,3 @@ for sym in symbols:
 print(digits)
 print(letters)
 print(other)
-
-##
