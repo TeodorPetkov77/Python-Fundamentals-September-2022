@@ -6,8 +6,8 @@ for i in range(n):
     plant = command[0]
     rarity = int(command[1])
     if plant not in plant_rarity_dictionary:
-        plant_rarity_dictionary[plant] = [{'rarity': 0}, {'rating': [0]}]
-    plant_rarity_dictionary[plant][0]['rarity'] = rarity
+        plant_rarity_dictionary[plant] = {'rarity': 0, 'rating': [0]}
+    plant_rarity_dictionary[plant]['rarity'] = rarity
 
 command = input()
 
@@ -19,29 +19,29 @@ while command != "Exhibition":
     if action == "Rate":
         points = int(plant_and_points[1])
         if plant in plant_rarity_dictionary:
-            if plant_rarity_dictionary[plant][1]['rating'] == [0]:
-                plant_rarity_dictionary[plant][1]['rating'] = [points]
+            if plant_rarity_dictionary[plant]['rating'] == [0]:
+                plant_rarity_dictionary[plant]['rating'] = [points]
             else:
-                plant_rarity_dictionary[plant][1]['rating'].append(points)
+                plant_rarity_dictionary[plant]['rating'].append(points)
         else:
             print("error")
     elif action == "Update":
         points = int(plant_and_points[1])
         if plant in plant_rarity_dictionary:
-            plant_rarity_dictionary[plant][0]['rarity'] = points
+            plant_rarity_dictionary[plant]['rarity'] = points
         else:
             print("error")
     elif action == "Reset":
         if plant in plant_rarity_dictionary:
-            plant_rarity_dictionary[plant][1]['rating'] = [0]
+            plant_rarity_dictionary[plant]['rating'] = [0]
         else:
             print("error")
     command = input()
 print("Plants for the exhibition:")
 
 for key, value in plant_rarity_dictionary.items():
-    print(f"- {key}; Rarity: {value[0]['rarity']}; "
-          f"Rating: {sum(value[1]['rating']) / len(value[1]['rating']):.2f}")
+    print(f"- {key}; Rarity: {value['rarity']}; "
+          f"Rating: {sum(value['rating']) / len(value['rating']):.2f}")
 
 
 # https://judge.softuni.org/Contests/Practice/Index/2518#2
