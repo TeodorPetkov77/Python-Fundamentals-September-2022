@@ -34,6 +34,8 @@ while command != "Exhibition":
     elif action == "Reset":
         if plant in plant_rarity_dictionary:
             plant_rarity_dictionary[plant][1]['rating'] = [0]
+        else:
+            print("error")
     command = input()
 print("Plants for the exhibition:")
 for key, value in plant_rarity_dictionary.items():
