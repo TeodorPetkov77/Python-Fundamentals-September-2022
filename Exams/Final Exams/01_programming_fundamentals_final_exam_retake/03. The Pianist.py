@@ -6,7 +6,7 @@ for i in range(number_of_pieces):
     piece = piece_composer_key[0]
     composer = piece_composer_key[1]
     key = piece_composer_key[2]
-    pieces_dictionary[piece] = [{"composer": composer}, {"key": key}]
+    pieces_dictionary[piece] = {"composer": composer, "key": key}
 
 command = input()
 while command != "Stop":
@@ -16,7 +16,7 @@ while command != "Stop":
         composer = command[2]
         key = command[3]
         if piece not in pieces_dictionary:
-            pieces_dictionary[piece] = [{"composer": composer}, {"key": key}]
+            pieces_dictionary[piece] = {"composer": composer, "key": key}
             print(f"{piece} by {composer} in {key} added to the collection!")
         else:
             print(f"{piece} is already in the collection!")
@@ -31,14 +31,14 @@ while command != "Stop":
         piece = command[1]
         new_key = command[2]
         if piece in pieces_dictionary:
-            pieces_dictionary[piece][1]['key'] = new_key
+            pieces_dictionary[piece]['key'] = new_key
             print(f"Changed the key of {piece} to {new_key}!")
         else:
             print(f"Invalid operation! {piece} does not exist in the collection.")
     command = input()
 
 for key, value in pieces_dictionary.items():
-    print(f"{key} -> Composer: {value[0]['composer']}, Key: {value[1]['key']}")
+    print(f"{key} -> Composer: {value['composer']}, Key: {value['key']}")
 
 
 # https://judge.softuni.org/Contests/Practice/Index/2525#2
