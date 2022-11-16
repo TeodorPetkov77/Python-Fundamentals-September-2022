@@ -21,9 +21,9 @@ while command != "end of contests":
     contests_passes[contest] = password
     command = input()
 
-command = input()
-
 final_results = {}
+
+command = input()
 
 while command != 'end of submissions':
     command = command.split('=>')
