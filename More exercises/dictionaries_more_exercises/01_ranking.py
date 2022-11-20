@@ -2,9 +2,7 @@ def best_candidate(dictionary: dict):
     best_name = ''
     best_points = 0
     for key, value in dictionary.items():
-        current_points = 0
-        for key1, value1 in value.items():
-            current_points += int(value1)
+        current_points = sum(value.values())
         if current_points > best_points:
             best_name = key
             best_points = current_points
