@@ -33,11 +33,9 @@ while command != 'end of submissions':
             and password == contests_passes[contest]:
         if user not in final_results:
             final_results[user] = {}
-        if contest not in final_results[user].keys():
+        if contest not in final_results[user].keys() or \
+                points > final_results[user][contest]:
             final_results[user][contest] = points
-        else:
-            if points > final_results[user][contest]:
-                final_results[user][contest] = points
     command = input()
 
 best_candidate(final_results)
