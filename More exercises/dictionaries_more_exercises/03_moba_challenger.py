@@ -43,7 +43,6 @@ for key, value in sorted(moba.items(), key=lambda x: (-sum(x[1].values()), x[0])
     for key1, value1 in sorted(value.items(), key=lambda x: (-x[1], x[0])):
         print(f'- {key1} <::> {value1}')
 
-
 # https://judge.softuni.org/Contests/Practice/Index/1738#2
 
 # 3.	MOBA Challenger
