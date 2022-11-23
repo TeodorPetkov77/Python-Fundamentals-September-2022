@@ -20,3 +20,14 @@ morse_input = [x.split() for x in input().split(" | ")]
 morse_decode(morse_input, morse_codes)
 
 
+
+
+# https://judge.softuni.org/Contests/Practice/Index/1741#3
+
+# 4.	Morse Code Translator
+# Write a program that translates messages from Morse code to English (capital letters). Use this page to help you (without the numbers). The words will be separated by a space (' '). Each word is separated by a ' | '.
+# Print the found words on one line, separated by a space.
+# Example
+# Input	Output
+# .. | -- .- -.. . |  -.-- --- ..- | .-- .-. .. - . | .- | .-.. --- -. --. | -.-. --- -.. .	I MADE YOU WRITE A LONG CODE
+# .. | .... --- .--. . | -.-- --- ..- | .- .-. . | -. --- - | -- .- -..	I HOPE YOU ARE NOT MAD
