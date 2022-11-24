@@ -58,4 +58,4 @@ for key, value in sorted(demon_dictionary.items()):
 # M3ph1st0**:
 # Health - 'M' + 'p' + 'h' + 's' + 't' = 524 health.
 # Damage - (3 + 1 + 0) * 2 * 2 = 16 damage.
-# Gos/ho	Gos/ho - 512 health, 0.00 damage	
+# Gos/ho	Gos/ho - 512 health, 0.00 damage
