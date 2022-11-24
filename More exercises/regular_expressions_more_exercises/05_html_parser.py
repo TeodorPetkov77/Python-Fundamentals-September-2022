@@ -1,20 +1,18 @@
 import re
 
-text = input()
-
-modded_text = re.sub(r'\\n', '', text)
+text_input = re.sub(r'\\n', '', input())
 
 pattern_title = re.compile('(?<=<title>)(\w+\s*)+(?=</title>)')
 remove_tags_pattern = re.compile('<[^<>]+>')
 
-print(f'Title: {re.search(pattern_title, modded_text).group()}')
+print(f'Title: {re.search(pattern_title, text_input).group()}')
 
-modded_text = re.sub(r'<title>(\w+\s*)+</title>', '', modded_text)
+text_input = re.sub(r'<title>(\w+\s*)+</title>', '', text_input)
 
-for tag in [x.group() for x in re.finditer(remove_tags_pattern, modded_text)]:
-    modded_text = re.sub(tag, '', modded_text)
+for tag in [x.group() for x in re.finditer(remove_tags_pattern, text_input)]:
+    text_input = re.sub(tag, ' ', text_input)
 
-print(f'Content: {modded_text}')
+print(f'Content: {text_input.strip().replace("  ", " ")}')
 
 # https://judge.softuni.org/Contests/Practice/Index/1744#4
 
