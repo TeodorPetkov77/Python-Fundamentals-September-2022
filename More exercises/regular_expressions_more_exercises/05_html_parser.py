@@ -7,8 +7,7 @@ modded_text = re.sub(r'\\n', '', text)
 pattern_title = re.compile('(?<=<title>)(\w+\s*)+(?=</title>)')
 remove_tags_pattern = re.compile('<[^<>]+>')
 
-if re.search(pattern_title, modded_text).group():
-    print(f'Title: {re.search(pattern_title, modded_text).group()}')
+print(f'Title: {re.search(pattern_title, modded_text).group()}')
 
 modded_text = re.sub(r'<title>(\w+\s*)+</title>', '', modded_text)
 
