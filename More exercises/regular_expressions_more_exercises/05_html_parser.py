@@ -3,14 +3,11 @@ import re
 text_input = re.sub(r'\\n', '', input())
 
 pattern_title = re.compile('(?<=<title>)(\w+\s*)+(?=</title>)')
-remove_tags_pattern = re.compile('<[^<>]+>')
 
 print(f'Title: {re.search(pattern_title, text_input).group()}')
 
 text_input = re.sub(r'<title>(\w+\s*)+</title>', '', text_input)
-
-for tag in [x.group() for x in re.finditer(remove_tags_pattern, text_input)]:
-    text_input = re.sub(tag, ' ', text_input)
+text_input = re.sub(r'<[^<>]+>', ' ', text_input)
 
 print(f'Content: {text_input.strip().replace("  ", " ")}')
 
