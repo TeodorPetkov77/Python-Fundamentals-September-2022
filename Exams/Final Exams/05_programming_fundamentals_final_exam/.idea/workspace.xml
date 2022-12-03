@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b54c55ef-63a4-4de6-b73e-b84a0d40c1b4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_p!rates.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_p!rates.py" afterDir="false" />
-    </list>
+    <list default="true" id="b54c55ef-63a4-4de6-b73e-b84a0d40c1b4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +118,7 @@
       <workItem from="1670056192113" duration="779000" />
       <workItem from="1670057887298" duration="17000" />
       <workItem from="1670058086770" duration="4000" />
-      <workItem from="1670060807778" duration="5083000" />
+      <workItem from="1670060807778" duration="5387000" />
     </task>
     <servers />
   </component>
@@ -141,7 +138,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/05_programming_fundamentals_final_exam$02_emoji_detector.coverage" NAME="02_emoji_detector Coverage Results" MODIFIED="1670064201427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/05_programming_fundamentals_final_exam$03_p_rates.coverage" NAME="03_p!rates Coverage Results" MODIFIED="1670065224269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/05_programming_fundamentals_final_exam$03_p_rates.coverage" NAME="03_p!rates Coverage Results" MODIFIED="1670066003004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/05_programming_fundamentals_final_exam$01_activation_keys.coverage" NAME="01_activation_keys Coverage Results" MODIFIED="1670062037400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
