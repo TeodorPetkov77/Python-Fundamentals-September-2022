@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b54c55ef-63a4-4de6-b73e-b84a0d40c1b4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_activation_keys.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_activation_keys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_emoji_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_emoji_detector.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +31,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.02_emoji_detector">
     <configuration name="01_activation_keys" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="05_programming_fundamentals_final_exam" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -54,8 +54,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="02_emoji_detector" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="05_programming_fundamentals_final_exam" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_emoji_detector.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.02_emoji_detector" />
         <item itemvalue="Python.01_activation_keys" />
       </list>
     </recent_temporary>
@@ -75,7 +98,7 @@
       <workItem from="1670056192113" duration="779000" />
       <workItem from="1670057887298" duration="17000" />
       <workItem from="1670058086770" duration="4000" />
-      <workItem from="1670060807778" duration="1164000" />
+      <workItem from="1670060807778" duration="3422000" />
     </task>
     <servers />
   </component>
@@ -94,6 +117,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/05_programming_fundamentals_final_exam$01_activation_keys.coverage" NAME="01_activation_keys Coverage Results" MODIFIED="1670061602515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/05_programming_fundamentals_final_exam$02_emoji_detector.coverage" NAME="02_emoji_detector Coverage Results" MODIFIED="1670064201427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/05_programming_fundamentals_final_exam$01_activation_keys.coverage" NAME="01_activation_keys Coverage Results" MODIFIED="1670062037400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
