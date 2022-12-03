@@ -12,11 +12,11 @@ for num in threshold_list:
 emoji_list = []
 valid_emotes = 0
 
-for valid_emotes, emoji in enumerate(re.finditer(emoji_pattern, text)):
+for valid_emotes, emoji in enumerate(re.finditer(emoji_pattern, text), start=1):
     if sum([ord(x) for x in emoji.group('emoji')]) > cool_threshold:
         emoji_list.append(emoji.group('whole_emoji'))
 
 print(f'Cool threshold: {cool_threshold}')
-print(f'{valid_emotes + 1} emojis found in the text. The cool ones are:')
+print(f'{valid_emotes} emojis found in the text. The cool ones are:')
 print(' \n'.join(emoji_list))
 
